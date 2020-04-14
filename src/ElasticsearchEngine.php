@@ -143,7 +143,7 @@ class ElasticsearchEngine extends Engine
                     'bool' => [
                         'must' => [
                             [
-                                'query_string' => ['query' => "*{$builder->query}*"],
+                                'query_string' => ['query' => $builder->query],
                             ],
                         ],
                     ],
